@@ -33,5 +33,22 @@ public class Main {
             System.out.println("<li>" + product.getName() + "</li>");
         }
         System.out.println("</ul>");
+
+        IndividualCustomer individualCustomer = new IndividualCustomer();
+        individualCustomer.setId(1);;
+        individualCustomer.setPhone("05000000");
+        individualCustomer.setCustomerNumber("1254");
+        individualCustomer.setFirstName("İnci Gülçin");
+        individualCustomer.setLastName("Durak Yolcu");
+
+        CorporateCustomer corporateCustomer = new CorporateCustomer();
+        corporateCustomer.setId(2);
+        corporateCustomer.setCompanyName("ABC");
+        corporateCustomer.setCustomerNumber("451");
+        corporateCustomer.setTaxNumber("1547989251478");
+        corporateCustomer.setPhone("0242000000");
+
+        Customer[] customers = {individualCustomer,corporateCustomer};
+
     }
 }
